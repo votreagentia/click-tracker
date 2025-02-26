@@ -11,7 +11,7 @@ app.get('/track-click', async (req, res) => {
     console.log(`Clic enregistré pour le client : ${key}`);
     
     // Appel au webhook Make.com
-    const webhookUrl = 'https://hook.eu2.make.com/nayuq4pk9bbril447q6gjfuluqnvd5or';
+    const webhookUrl = 'https://hook.eu2.make.com/vqklovrtkwilbvcxpnfd5yf7rnu2hkp9';
     try {
       await axios.post(webhookUrl, { key });
       console.log('Webhook Make.com déclenché avec succès.');
@@ -23,7 +23,7 @@ app.get('/track-click', async (req, res) => {
   }
 
   // Redirection vers la page d'avis Google
-  const avisGoogleUrl = 'https://search.google.com/local/writereview?placeid=ChIJVQSNXgZy5kcRiwd4wa1iMKg';
+  const avisGoogleUrl = 'https://search.google.com/local/writereview?placeid=ChIJ-WMq7YwrzBIRr4KfG0YSZq4';
   res.redirect(avisGoogleUrl);
 });
 
